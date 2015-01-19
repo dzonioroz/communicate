@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="Nikola Orozovic" content="Prezentacija"/>
+<title> We love bikes</title>
+<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+<link rel='stylesheet' href='style.css' media='screen'/> <!-- css fajl-->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href='css/animate.css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Bilbo">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/sha256.js"></script>
+<script src="js/firepano.js"></script>
+<script>
+ new WOW().init();
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '628376890618348',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+</head>
+<body>
+<div class="container">
+
+	<div class ="header"> <p class = "naslov"> Explore. Dream. Discover.<p> </div>
+
+	<div class="banner">
+		<p class='bilbo fadeInDown animated'>“Twenty years from now you will be more disappointed by the things
+		that you didn't do than by the ones you did do. <br>
+		So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. 
+		<br><br>Explore. Dream. Discover.”<br><br> Mark Twain</p>
+	</div>
+
+	<nav>
+		<ul class="navigacija fadeInDown animated">
+			<li class="prvoDugme wow bounce animated" data-wow-delay="1s"><button class='btn'><a href='#'>Home</a></button></li>
+		</ul>
+	</nav>
+
+	<div class="content">
+<!-- PRVI DEO STRANE ------------------------------------------------------------ -->
+		<div class="section group">
+			<div class="col span_1_of_3"></div>
+			<div class="col span_1_of_3">
+						<h2> Hi !!</h2>
+						<div class='slicica wow bounce animated' data-wow-delay="1s" style="text-align:center;"><img class='profilna' src='Images/NikolaOrozovic.jpg'></div>
+						<p class="sve" style='display:block; text-align: center;'>My name is Nikola Orozovic. <br>I've made this website to practise my HTML + CSS skills<br> ...as well as for fun. ;) </p>
+							<div id="share-buttons" style="text-align:center;">
+								<!-- Facebook -->
+								<a href="http://www.facebook.com/orozovic" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+								<!-- Twitter -->
+								<a href="http://twitter.com/Orozovic" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+								<!-- Google+ -->
+								<a href="https://plus.google.com/u/0/+NikolaOrozovic" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+							</div>
+			</div>	
+			<div class="col span_1_of_3"></div>	
+		</div>		
+
+<!-- DRUGI DEO STRANE ------------------------------------------------------------ -->
+		<div class="section group">
+			<div class="col span_1_of_3">
+				<p class="sve" style='display:block; text-align: center;'>After climbing a great hill,<br> one only finds that there are many <br> more hills to climb.<br><br> <em>Nelson Mendela</em></p>
+			</div>
+			<div class="col span_1_of_3"></div>
+			<div class="col span_1_of_3">
+				<p class="sve" style='display:block; text-align: center;'>We all need people who will give us feedback. That's how we improve. <br><br><em>Thanks!</em><br><br> &#x21e9;</p>
+			</div>
+		</div>
+<!-- TRECI DEO STRANE ------------------------------------------------------------ -->
+		<div class="section group">
+			<div class="col span_1_of_3"></div>
+			<div class="col span_1_of_3">
+				<div id="spin"></div>
+  					<h1></h1>
+  					<input class="hidden" type="file" accept="image/*" capture="camera" id="file-upload">
+  					<br/>
+  					<img class="pano" id="pano" />
+
+
+			</div>
+			<div class="col span_1_of_3">
+      			<div class='chatContainer'>
+      				<form>       			
+          				<div>
+            				<input type='text' class='form-control nameInput' placeholder='Ime'>
+          				</div>
+         				 <div>
+            			<textarea class='form-control messageInput' style="width: 100%;" rows = '3' placeholder='Poruka'></textarea>
+          				</div>       			
+      				</form>
+      			<div class="button-group">
+        			<p class="counter">140</p>
+        			<a href="#" class="dugme">Post</a>
+      			</div>
+      			<ul class="posts">
+      			</ul>
+			</div>
+		</div>
+	</div>
+	<footer> Copyrights 2014 by: facebook.com/orozovic </footer>
+</div>
+
+</body>
+</html>
