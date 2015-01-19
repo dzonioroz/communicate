@@ -72,7 +72,7 @@ height:auto;
 position:relative;
 top:350px;
 opacity:1;
- background: url(Images/world.jpg) no-repeat center center fixed; 
+ background: url('https://cloud.githubusercontent.com/assets/10469329/5807419/741f55c2-a023-11e4-8756-7a1f98abba54.jpg') no-repeat center center fixed; 
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
